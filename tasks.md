@@ -1,4 +1,3 @@
 - HTML
 - CSS
 - JS Basics Function
-- 
