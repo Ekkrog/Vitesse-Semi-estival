@@ -1,0 +1,15 @@
+name: Vitesse Semi Estival
+ 
+services:
+  db:
+    image: postgres:17
+    container_name: Vitesse
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: guinguette
+      POSTGRES_DB: estival
+    ports:
+      - "5432:5432"
+    volumes:
+    
