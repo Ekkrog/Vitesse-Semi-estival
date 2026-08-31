@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
     } catch (error){
         console.error("Oh dommage ! C'est cassé.", error)
     }
-})
+});
 
 router.get('/vendeur', async (req,res) => {
     try {
@@ -53,7 +53,7 @@ router.post('/vente', async (req,res) => {
         const { rows } = await pool.query(
             `INSERT INTO ventes_lignes (vente_id, produit_id, quantite)
             VALUES ($1, $2, $3)`,
-            [vente.row[0].id, lignes[0].produit_id, lignes[0].quantite]
+            [vente.rows[0].id, lignes[0].produit_id, lignes[0].quantite]
         );
 
         res.status(201).json(rows[0]);
