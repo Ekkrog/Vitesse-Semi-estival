@@ -1,0 +1,8 @@
+[ 
+    {"id":"1", "nom": "Churros","prix": 3.50
+    }, 
+    {"id":"2", "nom": "Gauffre","prix": 4.00
+    }, 
+    {"id":"3", "nom": "Crête nutella","prix": 3.00
+    }
+]
